@@ -4,11 +4,11 @@ import React from "react";
 export const Program = () => {
   return (
     <section className="px-4 pb-[3rem]">
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center max-w-[600px] mx-auto">
         <h1 className="text-h2 text-center font-semibold text-color1 mt-[2rem]">
           Join the Program
         </h1>
-        <div className="mt-[2rem] flex flex-col items-center bg-[#F8F8F8] py-[2.5rem] px-4">
+        <div className="mt-[2rem] flex flex-col items-center bg-[#F8F8F8] py-[2.5rem] px-4 w-full rounded-lg">
           <Image
             className="max-w-[130px] "
             src="/images/trash.png"
@@ -16,8 +16,8 @@ export const Program = () => {
             width={400}
             height={400}
           />
-          <div>
-            <h3 className="text-h2 text-center font-semibold text-color1 mt-[2rem]">
+          <div className="max-w-[500px] mx-auto">
+            <h3 className="text-h2 text-center font-semibold text-color1 mt-[2rem] ">
               Ready to Make the Change?
             </h3>
             <p className="text-[13px] text-[#2D2D2DDD] opacity-[86] text-center mt-2">
@@ -26,7 +26,7 @@ export const Program = () => {
             </p>
 
             {/* paypal */}
-            <div className="mt-10 text-center bg-white py-4 px-2 rounded">
+            <div className="mt-10 text-center bg-white py-5 px-4 rounded ">
               <span className="text-[19px] ">$29.99</span>
               <p className="text-[13px] text-color1">
                 One-time payment, lifetime access
