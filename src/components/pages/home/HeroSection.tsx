@@ -21,7 +21,7 @@ export const HeroSection = () => {
       {/* Optional overlay or hero content */}
       <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 py-13 max-w-[900px] mx-auto">
         <div>
-          <h1 className="font-semibold text-[25px] tracking-widest">
+          <h1 className="font-semibold text-[28px] tracking-widest">
             Quit Smoking through Smart Financial Punishment
           </h1>
           <p className="text-[15px] mt-2">
