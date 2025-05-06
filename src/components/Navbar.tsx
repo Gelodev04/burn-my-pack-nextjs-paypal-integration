@@ -33,7 +33,7 @@ export const Navbar = () => {
 
   return (
     <header className="bg-white h-[65px] flex items-center w-full">
-      <nav className="p-3 px-9 w-full">
+      <nav className="p-3 px-9 w-full max-w-[1500px] mx-auto">
         {/* Mobile */}
         <div className="flex justify-between items-center">
           <h1 className="text-[24px] font-[700]">Burn my pack</h1>
