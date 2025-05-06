@@ -37,7 +37,18 @@ export const Program = () => {
               </button>
             </div>
           </div>
-        </div>
+          </div>
+
+        <div className="text-[#558B2F] bg-[#F1F8E9] text-[11px] px-3 py-2 rounded-lg mt-5">
+        <Image
+            className="max-w-[130px] "
+            src="/images/check.png"
+            alt="trash"
+            width={20}
+            height={20}
+          />
+            <p>"This method saved me thousands of dollars in the long run. The initial losses hurt, but they were exactly what I needed to finally quit." - Michael S., Smoke-free for 2 years</p>
+          </div>
       </div>
     </section>
   );

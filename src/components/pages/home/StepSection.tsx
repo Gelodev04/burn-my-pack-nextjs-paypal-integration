@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export const StepSection = () => {
@@ -49,6 +50,13 @@ export const StepSection = () => {
               
           </div>
         ))}
+      </div>
+
+      <div className="text-[#EF5050] bg-[#FFEBEE] text-[11px] px-3 py-2 rounded-lg mt-5 ">
+        <span>
+            <Image src="/images/danger.png" alt="danger" width={20} height={20}/>
+        </span>
+        <p>Important: This method works because of real financial consequences. Don't cheat yourself by skipping the punishment - it's essential for rewiring your brain's response to smoking.</p>
       </div>
     </section>
   );
