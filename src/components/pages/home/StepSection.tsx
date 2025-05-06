@@ -44,7 +44,7 @@ export const StepSection = () => {
                           {step.number}
                         </div>
                         <div>
-                          <h3 className="font-semibold text-color1">{step.title}</h3>
+                          <h3 className="font-semibold text-color1 text-[18px]">{step.title}</h3>
                           <p className="text-[13px] text-color1 mt-2">{step.description}</p>
                     </div>
                     </div>
@@ -52,7 +52,7 @@ export const StepSection = () => {
               </div>
             ))}
           </div>
-          <div className="text-[#EF5050] bg-[#FFEBEE] text-[11px] px-4 py-4 rounded-lg mt-5 flex items-center gap-2">
+          <div className="text-[#EF5050] bg-[#FFEBEE] text-[12px] px-4 py-4 rounded-lg mt-5 flex items-center gap-2">
             <span>
                 <Image src="/images/danger.png" alt="danger" width={20} height={20}/>
             </span>

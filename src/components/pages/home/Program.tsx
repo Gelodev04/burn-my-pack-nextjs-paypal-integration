@@ -39,7 +39,7 @@ export const Program = () => {
           </div>
           </div>
 
-        <div className="text-[#558B2F] bg-[#F1F8E9] text-[11px] px-3 py-2 rounded-lg mt-5">
+        <div className="text-[#558B2F] bg-[#F1F8E9] text-[12px] px-4 py-4 rounded-lg mt-5 flex items-center gap-2">
         <Image
             className="max-w-[130px] "
             src="/images/check.png"
