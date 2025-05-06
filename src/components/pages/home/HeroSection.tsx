@@ -1,0 +1,59 @@
+"use client";
+
+import React from "react";
+import { Aright } from "@/components/icons/Aright";
+
+export const HeroSection = () => {
+  return (
+    <section className="relative w-full h-[calc(100vh-65px)] overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="/vids/Revision.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Optional overlay or hero content */}
+      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 py-13">
+        <div>
+          <h1 className="font-semibold text-[20px] tracking-widest">
+            Quit Smoking through Smart Financial Punishment
+          </h1>
+          <p className="text-[12px] mt-2">
+            A proven method that helped me quit smoking 15 years ago
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center ">
+          <div className="text-left text-[12px] bg-white/20 rounded-lg py-1 px-2 text-white">
+            <p>
+              I discovered a powerful way to quit smoking: by making it
+              financially painful. Every time I slipped and bought a pack, I
+              would smoke one cigarette and then throw away the rest - along
+              with an extra $10 bill. The pain of losing money became stronger
+              than the urge to smoke.
+            </p>
+            <br />
+            <p>
+              This method worked so well that I haven't touched a cigarette in
+              15 years. Now, I want to share this life-changing technique with
+              you.
+            </p>
+          </div>
+          <button className="bg-[#00B894] mt-6 rounded px-4 py-[6px] text-[11px] flex items-center gap-2 ">
+            <span>Learn More</span>
+            <Aright/>
+          </button>
+        </div>
+      </div>
+
+      {/* Optional dark overlay */}
+      <div className="absolute inset-0 bg-black/40 z-0" />
+    </section>
+  );
+};
