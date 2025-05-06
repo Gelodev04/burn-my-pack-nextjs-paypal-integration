@@ -1,58 +1,85 @@
-"use client"
-import React from 'react'
-import { Squeeze as Hamburger } from 'hamburger-react'
-import { useState } from 'react'
-
+"use client";
+import React from "react";
+import { Squeeze as Hamburger } from "hamburger-react";
+import { useState } from "react";
+import Image from "next/image";
 
 export const Navbar = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Toggle the menu visibility when the hamburger is clicked
   const handleHamburgerClick = () => {
-    setIsMenuOpen(prevState => !prevState)
-  }
+    setIsMenuOpen((prevState) => !prevState);
+  };
 
   const menuItems = [
     {
-        label: "How It Work",
-        link: "/"
+      label: "How It Work",
+      link: "/",
     },
     {
-        label: "The Science",
-        link: "/"
+      label: "The Science",
+      link: "/",
     },
     {
-        label: "Get Started",
-        link: "/"
+      label: "Get Started",
+      link: "/",
     },
     {
-        label: "Contact",
-        link: "/"
-    }
-  ]
+      label: "Contact",
+      link: "/",
+    },
+  ];
 
   return (
-    <header className='bg-white h-[65px] flex items-center w-full'>
-        <nav className='p-3 w-full'>
-                {/* Mobile */}
-            <div className='flex justify-between items-center'>
-                <h1 className='text-[1.3rem] font-[700]'>Burn my pack</h1>
-                <Hamburger toggled={isMenuOpen} toggle={handleHamburgerClick} size={21}/>
-            </div>
+    <header className="bg-white h-[65px] flex items-center w-full">
+      <nav className="p-3 px-9 w-full">
+        {/* Mobile */}
+        <div className="flex justify-between items-center">
+          <h1 className="text-[24px] font-[700]">Burn my pack</h1>
 
-            {/* mobile menu */}
-            {isMenuOpen && (
-          <div className='absolute z-50 bg-white w-full left-0'>
-            <ul className='text-center divide-y divide-gray-200'>
+          <ul className="flex  gap-8 items-center">
+            {menuItems.map((item, index) => (
+              <li key={index} className=" text-[16px]">
+                <a
+                  className="w-full block  py-3  "
+                  href={item.link}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+            <button className="cursor-pointer">
+                <Image className="w-[20px]" src="/images/navTrash.png" alt="trash" width={30} height={10}/>
+            </button>
+          </ul>
+          <div className="hidden">
+            <Hamburger
+              toggled={isMenuOpen}
+              toggle={handleHamburgerClick}
+              size={21}
+            />
+          </div>
+        </div>
+
+        {/* mobile menu */}
+        {isMenuOpen && (
+          <div className="absolute z-50 bg-white w-full left-0">
+            <ul className="text-center divide-y divide-gray-200">
               {menuItems.map((item, index) => (
-              
-                    <li key={index} className=' text-[15px]'><a className='w-full block  py-3 hover:bg-gray-100 ' href={item.link}>{item.label}</a></li>
-            
+                <li key={index} className=" text-[15px]">
+                  <a
+                    className="w-full block  py-3 hover:bg-gray-100 "
+                    href={item.link}
+                  >
+                    {item.label}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
         )}
-        </nav>
+      </nav>
     </header>
-  )
-}
+  );
+};

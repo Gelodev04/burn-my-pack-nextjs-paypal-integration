@@ -31,32 +31,33 @@ export const StepSection = () => {
 
   return (
     <section className="px-4 pt-[10rem] pb-[2rem]">
-      <div className="space-y-6">
-        {stepsData.map((step) => (
+      <div className="max-w-[900px] mx-auto">
+          <div className="space-y-6">
+            {stepsData.map((step) => (
           
-              <div
-                key={step.number}
-                className="bg-[#F8F8F8] p-4 rounded-xl flex items-center gap-4 min-h-[145px] "
-              >
-                <div className="flex items-start gap-4">
-                    <div className="flex items-center justify-center px-2 py-1 rounded-full bg-[#00B894] text-color1 font-bold text-sm">
-                      {step.number}
+                  <div
+                    key={step.number}
+                    className="bg-[#F8F8F8] p-4 rounded-xl flex items-center gap-4 min-h-[120px] "
+                  >
+                    <div className="flex items-start gap-4">
+                        <div className="flex items-center justify-center px-2 py-1 rounded-full bg-[#00B894] text-color1 font-bold text-sm">
+                          {step.number}
+                        </div>
+                        <div>
+                          <h3 className="font-semibold text-color1">{step.title}</h3>
+                          <p className="text-[13px] text-color1 mt-2">{step.description}</p>
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-color1">{step.title}</h3>
-                      <p className="text-[13px] text-color1">{step.description}</p>
-                </div>
-                </div>
-              
+                    </div>
+          
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-
-      <div className="text-[#EF5050] bg-[#FFEBEE] text-[11px] px-3 py-2 rounded-lg mt-5 ">
-        <span>
-            <Image src="/images/danger.png" alt="danger" width={20} height={20}/>
-        </span>
-        <p>Important: This method works because of real financial consequences. Don't cheat yourself by skipping the punishment - it's essential for rewiring your brain's response to smoking.</p>
+          <div className="text-[#EF5050] bg-[#FFEBEE] text-[11px] px-4 py-4 rounded-lg mt-5 flex items-center gap-2">
+            <span>
+                <Image src="/images/danger.png" alt="danger" width={20} height={20}/>
+            </span>
+            <p>Important: This method works because of real financial consequences. Don't cheat yourself by skipping the punishment - it's essential for rewiring your brain's response to smoking.</p>
+          </div>
       </div>
     </section>
   );

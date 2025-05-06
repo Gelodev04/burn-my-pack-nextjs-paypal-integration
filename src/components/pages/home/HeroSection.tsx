@@ -19,18 +19,18 @@ export const HeroSection = () => {
       </video>
 
       {/* Optional overlay or hero content */}
-      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 py-13">
+      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 py-13 max-w-[900px] mx-auto">
         <div>
-          <h1 className="font-semibold text-[20px] tracking-widest">
+          <h1 className="font-semibold text-[25px] tracking-widest">
             Quit Smoking through Smart Financial Punishment
           </h1>
-          <p className="text-[12px] mt-2">
+          <p className="text-[15px] mt-2">
             A proven method that helped me quit smoking 15 years ago
           </p>
         </div>
 
         <div className="flex flex-col items-center ">
-          <div className="text-left text-[12px] bg-white/20 rounded-lg py-[5px] px-3 text-white">
+          <div className="text-left text-[15px] bg-white/20 rounded-xl py-[1.5rem] px-[1.6rem] text-white">
             <p>
               I discovered a powerful way to quit smoking: by making it
               financially painful. Every time I slipped and bought a pack, I
@@ -45,7 +45,7 @@ export const HeroSection = () => {
               you.
             </p>
           </div>
-          <button className="bg-[#00B894] hover:bg-[hsl(168,100%,41%)] active:bg-[hsl(168,100%,41%)] duration-100 ease-out  mt-6 rounded-lg px-4 py-[6px] text-[11px] flex items-center gap-2 cursor-pointer">
+          <button className="bg-[#00B894] hover:bg-[hsl(168,100%,41%)] active:bg-[hsl(168,100%,41%)] duration-100 ease-out  mt-6 rounded-[6px] px-4 py-[7px] text-[11.5px] flex items-center gap-2 cursor-pointer">
             <span>Learn More</span>
             <Aright/>
           </button>

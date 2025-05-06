@@ -25,16 +25,16 @@ export default function Science() {
       
 
   return (
-    <section className='py-8 px-4'>
-        <h1 className='text-center text-h2 font-bold text-[#2D2D2D]'>The Science Behind Financial Punishment</h1>
+    <section className='py-12 px-4'>
+        <h1 className='text-center text-[25px] font-bold text-[#2D2D2D]'>The Science Behind Financial Punishment</h1>
 
-        <ul className='mt-15 flex flex-col gap-10'>
+        <ul className='mt-9 flex flex-row gap-[2rem] max-w-[900px] mx-auto'>
             {scienceData.map((item, index) => (
-                <li key={index} className='flex flex-col  gap-2 '>
-                    <Image className='' src={item.icon} alt={item.title} width={50} height={50} />
+                <li key={index} className='flex flex-col  gap-2 bg-[#F8F8F8] pt-[2.2rem] px-[2rem] pb-[1rem] w-[500px] rounded-lg'>
+                    <Image className='w-[50px] h-[50px]' src={item.icon} alt={item.title} width={50} height={50} />
                     <div className='space-y-1 '>
-                        <h2 className='text-h3 font-bold text-[#2D2D2D]'>{item.title}</h2>
-                        <p className='text-[14px] text-[#2D2D2D]'>{item.description}</p>
+                        <h2 className='text-h3 font-bold text-[#2D2D2D] '>{item.title}</h2>
+                        <p className='text-[14px] text-[#2D2D2D] '>{item.description}</p>
                     </div>
                 </li>
             ))}
