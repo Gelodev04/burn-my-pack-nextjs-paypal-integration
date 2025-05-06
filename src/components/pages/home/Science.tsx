@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function Science() {
+export const ScienceSection = () => {
     const scienceData = [
         {
           icon: "/images/science-icon-1.png",
@@ -32,9 +32,9 @@ export default function Science() {
             {scienceData.map((item, index) => (
                 <li key={index} className='flex flex-col  gap-2 bg-[#F8F8F8] pt-[2.2rem] px-[2rem] pb-[1rem] w-[500px] rounded-lg'>
                     <Image className='w-[50px] h-[50px]' src={item.icon} alt={item.title} width={50} height={50} />
-                    <div className='space-y-1 '>
+                    <div className='space-y-2 mt-1'>
                         <h2 className='text-h3 font-bold text-[#2D2D2D] '>{item.title}</h2>
-                        <p className='text-[14px] text-[#2D2D2D] '>{item.description}</p>
+                        <p className='text-[13px] text-[#2D2D2D] '>{item.description}</p>
                     </div>
                 </li>
             ))}

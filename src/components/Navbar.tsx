@@ -3,7 +3,7 @@ import React from "react";
 import { Squeeze as Hamburger } from "hamburger-react";
 import { useState } from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,19 +15,19 @@ export const Navbar = () => {
   const menuItems = [
     {
       label: "How It Work",
-      link: "/",
+      link: "/how-it-works",
     },
     {
       label: "The Science",
-      link: "/",
+      link: "/the-science",
     },
     {
       label: "Get Started",
-      link: "/",
+      link: "/get-started",
     },
     {
       label: "Contact",
-      link: "/",
+      link: "/contact",
     },
   ];
 
@@ -36,17 +36,19 @@ export const Navbar = () => {
       <nav className="p-3 px-9 w-full max-w-[1500px] mx-auto">
         {/* Mobile */}
         <div className="flex justify-between items-center">
-          <h1 className="text-[24px] font-[700]">Burn my pack</h1>
+          <Link href="/">
+              <h1 className="text-[24px] font-[700]">Burn my pack</h1>
+          </Link>
 
           <ul className="flex  gap-8 items-center">
             {menuItems.map((item, index) => (
               <li key={index} className=" text-[16px]">
-                <a
+                <Link
                   className="w-full block  py-3  "
                   href={item.link}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
             <button className="cursor-pointer">
