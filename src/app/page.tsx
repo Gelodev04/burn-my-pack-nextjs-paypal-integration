@@ -11,7 +11,7 @@ export default function Home() {
       <Science/>
       <StepSection/>
       <Program/>
-      <div className="h-screen"></div>
+   
     </main>
   );
 }

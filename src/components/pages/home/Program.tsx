@@ -3,12 +3,12 @@ import React from "react";
 
 export const Program = () => {
   return (
-    <section className="px-4">
+    <section className="px-4 pb-[3rem]">
       <div className="flex flex-col items-center">
         <h1 className="text-h2 text-center font-semibold text-color1 mt-[2rem]">
           Join the Program
         </h1>
-        <div className="mt-[3rem] flex flex-col items-center bg-[#F8F8F8] py-[2.5rem] px-4">
+        <div className="mt-[2rem] flex flex-col items-center bg-[#F8F8F8] py-[2.5rem] px-4">
           <Image
             className="max-w-[130px] "
             src="/images/trash.png"
