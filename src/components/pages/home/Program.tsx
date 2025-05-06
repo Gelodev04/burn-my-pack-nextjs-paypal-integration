@@ -31,7 +31,7 @@ export const Program = () => {
               <p className="text-[13px] text-color1">
                 One-time payment, lifetime access
               </p>
-              <button className="bg-[#00B894] text-black text-[12px] w-full py-2 font-semibold rounded-lg mt-3 flex  items-center justify-center gap-2">
+              <button className="bg-[#00B894] hover:bg-[hsl(168,100%,41%)] active:bg-[hsl(168,100%,41%)] text-black text-[12px] w-full py-2 font-semibold rounded-lg mt-3 flex  items-center justify-center gap-2 cursor-pointer">
                 <Image src="/images/paypal.png" alt="paypal" width={15} height={15} />
                 <span>Pay with Paypal</span>
               </button>

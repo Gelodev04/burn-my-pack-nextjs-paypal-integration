@@ -30,7 +30,7 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex flex-col items-center ">
-          <div className="text-left text-[12px] bg-white/20 rounded-lg py-1 px-2 text-white">
+          <div className="text-left text-[12px] bg-white/20 rounded-lg py-[5px] px-3 text-white">
             <p>
               I discovered a powerful way to quit smoking: by making it
               financially painful. Every time I slipped and bought a pack, I
@@ -45,7 +45,7 @@ export const HeroSection = () => {
               you.
             </p>
           </div>
-          <button className="bg-[#00B894] mt-6 rounded px-4 py-[6px] text-[11px] flex items-center gap-2 ">
+          <button className="bg-[#00B894] hover:bg-[hsl(168,100%,41%)] active:bg-[hsl(168,100%,41%)] duration-100 ease-out  mt-6 rounded-lg px-4 py-[6px] text-[11px] flex items-center gap-2 cursor-pointer">
             <span>Learn More</span>
             <Aright/>
           </button>
