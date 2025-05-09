@@ -5,7 +5,7 @@ import { Aright } from "@/components/icons/Aright";
 
 export const HeroSection = () => {
   return (
-    <section className="relative w-full h-[calc(100vh-65px)] overflow-hidden">
+    <section className="relative w-full lg:h-[calc(100vh-65px)] overflow-hidden h-[300px]">
       {/* Background Video */}
       <video
         autoPlay
@@ -19,18 +19,18 @@ export const HeroSection = () => {
       </video>
 
       {/* Optional overlay or hero content */}
-      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 py-13 max-w-[900px] mx-auto">
+      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 max-w-[350px] mx-auto py-8">
         <div>
-          <h1 className="font-semibold text-[28px] tracking-widest">
+          <h1 className="font-[600] lg:text-[28px] text-[11px] tracking-wide">
             Quit Smoking through Smart Financial Punishment
           </h1>
-          <p className="text-[15px] mt-2">
+          <p className="lg:text-[15px] text-[7px] mt-[6px] ">
             A proven method that helped me quit smoking 15 years ago
           </p>
         </div>
 
         <div className="flex flex-col items-center ">
-          <div className="text-left text-[15px] bg-white/20 rounded-xl py-[1.5rem] px-[1.6rem] text-white">
+          <div className="text-left lg:text-[15px] text-[6.6px] bg-white/20 rounded-[5px] px-3 py-[8px] text-white leading-tight">
             <p>
               I discovered a powerful way to quit smoking: by making it
               financially painful. Every time I slipped and bought a pack, I
@@ -45,9 +45,9 @@ export const HeroSection = () => {
               you.
             </p>
           </div>
-          <button className="bg-[#00B894] hover:bg-[hsl(168,100%,41%)] active:bg-[hsl(168,100%,41%)] duration-100 ease-out  mt-6 rounded-[6px] px-4 py-[7px] text-[11.5px] flex items-center gap-2 cursor-pointer">
+          <button className="bg-[#00B894] hover:bg-[hsl(168,100%,41%)] active:bg-[hsl(168,100%,41%)] duration-100 ease-out  mt-3 rounded-[2px] lg:px-4 lg:py-[7px] lg:text-[11.5px] text-[7px] px-[5px] py-[3px] flex items-center gap-2 cursor-pointer">
             <span>Learn More</span>
-            <Aright/>
+            <Aright size="size-2"/>
           </button>
         </div>
       </div>
