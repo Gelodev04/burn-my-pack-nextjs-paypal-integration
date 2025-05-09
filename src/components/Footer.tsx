@@ -2,18 +2,18 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#333333] text-[8px] text-white px-4 py-5 pb-[1rem]">
+    <footer className="bg-[#333333] text-[5px] text-white px-4 py-5 pb-[1rem]">
       <div className="max-w-[900px] mx-auto">
-          <div className="space-y-10 border-b pb-[1.5rem] border-[#515151] flex ">
+          <div className=" border-b pb-[1rem]  border-[#515151] flex ">
               <div className="w-1/2">
-                <h6 className="text-[10px] font-bold">Contact Us</h6>
-                <div className="mt-2">
+                <h6 className="text-[6px] font-bold">Contact Us</h6>
+                <div className="mt-2 ">
                   <p>Have questions about the method?</p>
                   <p>Email: support@quitsmart.com</p>
                 </div>
               </div>
               <div className="w-1/2">
-                <h6 className="text-[10px] font-bold">Important Notice</h6>
+                <h6 className="text-[6px] font-bold">Important Notice</h6>
                 <div className="mt-2">
                   <p>
                     This method is based on personal experience and psychological
@@ -23,7 +23,7 @@ export const Footer = () => {
                 </div>
               </div>
           </div>
-          <p className="text-center mt-[1rem] text-[7px]">
+          <p className="text-center mt-[0.5rem]  text-[4px]">
           © {new Date().getFullYear()} QuitSmart. All rights reserved.
           </p>
       </div>

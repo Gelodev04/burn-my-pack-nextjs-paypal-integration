@@ -31,29 +31,29 @@ export const StepSection = () => {
 
   return (
     <section className="px-4 py-[2rem] ">
-      <h1 className="text-center text-[20px] font-bold text-[#2D2D2D]">The Step-by-Step process</h1>
+      <h1 className="text-center text-[16px] font-bold text-[#2D2D2D]">The Step-by-Step process</h1>
       <div className="max-w-[900px] mx-auto mt-[2rem]">
           <div className="space-y-6">
             {stepsData.map((step) => (
           
                   <div
                     key={step.number}
-                    className="bg-[#F8F8F8] p-4  rounded-xl flex items-center gap-4 min-h-[80px] "
+                    className="bg-[#F8F8F8] p-4  rounded-[8px] flex items-center gap-4 min-h-[65px] "
                   >
                     <div className="flex items-start gap-4 leading-tight">
-                        <div className="flex items-center justify-center px-[4] py-[1] rounded-full bg-[#00B894] text-color1 font-bold text-[9px]">
+                        <div className="flex items-center justify-center px-[4] py-[3] rounded-full bg-[#00B894] text-color1 font-bold text-[7px]">
                           {step.number}
                         </div>
                         <div>
-                          <h3 className="font-semibold text-color1 text-[10.6px]">{step.title}</h3>
-                          <p className="text-[9px] text-color1 mt-2">{step.description}</p>
+                          <h3 className="font-semibold text-color1 text-[8px]">{step.title}</h3>
+                          <p className="text-[7px] text-color1 mt-2">{step.description}</p>
                     </div>
                     </div>
           
               </div>
             ))}
           </div>
-          <div className="text-[#EF5050] bg-[#FFEBEE] text-[8px] px-4 py-[14] rounded-lg mt-5 flex items-center gap-2">
+          <div className="text-[#EF5050] bg-[#FFEBEE] text-[7px] px-4 py-[14] rounded-lg mt-5 flex items-center gap-2">
             <span>
                 <Image src="/images/danger.png" alt="danger" width={20} height={20}/>
             </span>
