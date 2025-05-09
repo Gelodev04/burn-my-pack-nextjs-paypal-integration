@@ -5,7 +5,7 @@ import { Aright } from "@/components/icons/Aright";
 
 export const HeroSection = () => {
   return (
-    <section className="relative w-full lg:h-[calc(100vh-65px)] overflow-hidden h-[242.45px]">
+    <section className="relative w-full md:h-[calc(100vh-64px)] overflow-hidden h-[242.45px]">
       {/* Background Video */}
       <video
         autoPlay
@@ -19,18 +19,18 @@ export const HeroSection = () => {
       </video>
 
       {/* Optional overlay or hero content */}
-      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 max-w-[350px] mx-auto py-8">
+      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 max-w-[350px] md:max-w-[1000px] mx-auto py-10">
         <div>
-          <h1 className="font-[700] lg:text-[28px] text-[10px] tracking-wide">
+          <h1 className="font-[700] md:text-[36px] text-[10px] tracking-wide">
             Quit Smoking through Smart Financial Punishment
           </h1>
-          <p className="lg:text-[15px] text-[5px] mt-[6px] ">
+          <p className="lg:text-[20px] text-[5px] mt-[6px] ">
             A proven method that helped me quit smoking 15 years ago
           </p>
         </div>
 
         <div className="flex flex-col items-center ">
-          <div className="text-left lg:text-[15px] text-[5.5px] bg-white/20 rounded-[8px] px-3 py-[8px] text-white leading-tight">
+          <div className="text-left md:text-[18px] text-[5.5px] bg-white/20 rounded-[8px] px-3 md:p-6 py-[8px] text-white leading-tight ">
             <p>
               I discovered a powerful way to quit smoking: by making it
               financially painful. Every time I slipped and bought a pack, I
@@ -45,9 +45,9 @@ export const HeroSection = () => {
               you.
             </p>
           </div>
-          <button className="bg-[#00B894] hover:bg-[hsl(168,100%,41%)] active:bg-[hsl(168,100%,41%)] duration-100 ease-out  mt-3 rounded-[3px] lg:px-4 lg:py-[7px] lg:text-[11.5px] text-[6px] px-[5px] py-[3px] flex items-center gap-2 cursor-pointer">
+          <button className="bg-[#00B894] hover:bg-[hsl(168,100%,41%)] active:bg-[hsl(168,100%,41%)] duration-100 ease-out  mt-3 md:mt-5 rounded-[3px] md:rounded-[8px] md:text-[16px] text-[6px] px-[5px] md:px-[13px] py-[3px] md:py-[8px] flex items-center gap-2 cursor-pointer">
             <span>Learn More</span>
-            <Aright size="size-2"/>
+            <Aright size="size-2 lg:size-4"/>
           </button>
         </div>
       </div>

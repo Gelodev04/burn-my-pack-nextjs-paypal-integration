@@ -32,17 +32,17 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="bg-white h-[20px] flex items-center w-full">
-      <nav className="p-3 px-2 w-full max-w-[1500px] mx-auto">
+    <header className="bg-white h-[20px] md:h-[64px] flex items-center w-full">
+      <nav className="p-3 px-2 md:px-[1.5rem] w-full max-w-[1500px] mx-auto">
         {/* Mobile */}
         <div className="flex justify-between items-center">
           <Link href="/">
-              <h1 className="lg:text-[24px] text-[7px] font-[700] whitespace-nowrap">Burn my pack</h1>
+              <h1 className="md:text-[24px] text-[7px] font-[700] whitespace-nowrap">Burn my pack</h1>
           </Link>
 
-          <ul className="flex  gap-[11px] items-center">
+          <ul className="flex  gap-[11px] md:gap-[1.8rem] items-center">
             {menuItems.map((item, index) => (
-              <li key={index} className=" text-[4px] whitespace-nowrap">
+              <li key={index} className=" text-[4px] md:text-[16px] whitespace-nowrap">
                 <Link
                   className="w-full block  py-3  "
                   href={item.link}
@@ -52,7 +52,7 @@ export const Navbar = () => {
               </li>
             ))}
             <button className="cursor-pointer">
-                <Image className="w-[5px] h-[6px]" src="/images/navTrash.png" alt="trash" width={30} height={10}/>
+                <Image className="w-[5px] md:w-[21px] md:h-[25px] h-[6px]" src="/images/navTrash.png" alt="trash" width={30} height={10}/>
             </button>
           </ul>
           <div className="hidden">
