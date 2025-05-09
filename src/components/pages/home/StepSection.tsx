@@ -46,7 +46,7 @@ export const StepSection = () => {
                   {step.number}
                 </div>
                 <div>
-                  <h3 className="font-semibold text-color1 text-[14px] md:text-[20px]">
+                  <h3 className="font-semibold text-color1 text-[16px] md:text-[20px]">
                     {step.title}
                   </h3>
                   <p className="text-[12px] md:text-[16px] text-color1 mt-2">

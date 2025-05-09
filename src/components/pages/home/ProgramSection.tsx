@@ -28,10 +28,10 @@ export const Program = () => {
 
             {/* PAYPAL */}
             <div className="mt-10 text-center bg-white py-5 px-4 rounded ">
-              <span className="text-[17px] md:text-[24px] text-[black]">
+              <span className="text-[20px] md:text-[24px] text-[black]">
                 $29.99
               </span>
-              <p className="text-[10px] md:text-[16px] text-black">
+              <p className="text-[11px] md:text-[16px] text-black">
                 One-time payment, lifetime access
               </p>
               <PaypalButton />

@@ -43,7 +43,7 @@ export const ScienceSection = () => {
               height={50}
             />
             <div className="space-y-2 mt-1">
-              <h2 className="text-[14px] md:text-[20px] font-bold text-[#232323] ">
+              <h2 className="text-[16px] md:text-[20px] font-bold text-[#232323] ">
                 {item.title}
               </h2>
               <p className="text-[12px] md:text-[16px] text-[#232323] ">

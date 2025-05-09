@@ -8,17 +8,10 @@ export const Navbar = () => {
       label: "How It Work",
       link: "/how-it-works",
     },
-    {
-      label: "The Science",
-      link: "/the-science",
-    },
+
     {
       label: "Get Started",
       link: "/get-started",
-    },
-    {
-      label: "Contact",
-      link: "/contact",
     },
   ];
 
@@ -28,17 +21,17 @@ export const Navbar = () => {
         {/* LOGO */}
         <div className="flex justify-between items-center">
           <Link href="/">
-            <h1 className="md:text-[24px] text-[14px] font-[700] whitespace-nowrap">
+            <h1 className="md:text-[24px] text-[16px] font-[700] whitespace-nowrap">
               Burn my pack
             </h1>
           </Link>
 
           {/* NAVLINKS */}
-          <ul className="flex  gap-[5px] md:gap-[1.8rem] items-center">
+          <ul className="flex  gap-[8px] md:gap-[1.8rem] items-center">
             {menuItems.map((item, index) => (
               <li
                 key={index}
-                className=" text-[8px] md:text-[16px] whitespace-nowrap"
+                className=" text-[12px] md:text-[16px] whitespace-nowrap"
               >
                 <Link className="w-full block   " href={item.link}>
                   {item.label}
