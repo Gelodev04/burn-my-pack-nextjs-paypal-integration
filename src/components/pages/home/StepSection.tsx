@@ -31,34 +31,48 @@ export const StepSection = () => {
 
   return (
     <section className="px-4 py-[2rem] ">
-      <h1 className="text-center text-[16px] md:text-[30px] font-bold text-[#2D2D2D]">The Step-by-Step process</h1>
+      <h1 className="text-center text-[20px] md:text-[30px] font-bold text-[#2D2D2D]">
+        The Step-by-Step process
+      </h1>
       <div className="max-w-[1000px] mx-auto mt-[2rem]">
-          <div className="space-y-6">
-            {stepsData.map((step) => (
-          
-                  <div
-                    key={step.number}
-                    className="bg-[#F8F8F8] p-4 md:px-[20px]  rounded-[8px] flex items-center gap-4 min-h-[65px] md:h-[148px] "
-                  >
-                    <div className="flex items-start gap-4 leading-tight">
-                        <div className="flex items-center justify-center px-[4] md:px-[6] py-[3] rounded-full bg-[#00B894] text-color1 font-bold text-[7px] md:text-[16px]">
-                          {step.number}
-                        </div>
-                        <div>
-                          <h3 className="font-semibold text-color1 text-[8px] md:text-[20px]">{step.title}</h3>
-                          <p className="text-[7px] md:text-[16px] text-color1 mt-2">{step.description}</p>
-                    </div>
-                    </div>
-          
+        <div className="space-y-6">
+          {stepsData.map((step) => (
+            <div
+              key={step.number}
+              className="bg-[#F8F8F8] p-4 md:px-[20px]  rounded-[8px] flex items-center gap-4 min-h-[65px] md:h-[148px] "
+            >
+              <div className="flex items-start gap-4 leading-tight">
+                <div className="flex items-center justify-center px-[4] md:px-[6] py-[3] rounded-full bg-[#00B894] text-color1 font-bold text-[10px] md:text-[16px]">
+                  {step.number}
+                </div>
+                <div>
+                  <h3 className="font-semibold text-color1 text-[14px] md:text-[20px]">
+                    {step.title}
+                  </h3>
+                  <p className="text-[12px] md:text-[16px] text-color1 mt-2">
+                    {step.description}
+                  </p>
+                </div>
               </div>
-            ))}
-          </div>
-          <div className="text-[#EF5050] bg-[#FFEBEE] text-[7px] md:text-[16px] px-4 py-[14] rounded-lg mt-5 flex items-center gap-2">
-            <span>
-                <Image className="md:w-[24px]" src="/images/danger.png" alt="danger" width={20} height={20}/>
-            </span>
-            <p>Important: This method works because of real financial consequences. Don't cheat yourself by skipping the punishment - it's essential for rewiring your brain's response to smoking.</p>
-          </div>
+            </div>
+          ))}
+        </div>
+        <div className="text-[#EF5050] bg-[#FFEBEE] text-[11px] md:text-[16px] px-4 py-[14] rounded-lg mt-5 flex items-center gap-2">
+          <span>
+            <Image
+              className="md:w-[24px] w-[40px]"
+              src="/images/danger.png"
+              alt="danger"
+              width={20}
+              height={20}
+            />
+          </span>
+          <p>
+            Important: This method works because of real financial consequences.
+            Don't cheat yourself by skipping the punishment - it's essential for
+            rewiring your brain's response to smoking.
+          </p>
+        </div>
       </div>
     </section>
   );
