@@ -41,7 +41,7 @@ export const Navbar = () => {
             {/* TRASH */}
             <button className="cursor-pointer">
               <Image
-                className="w-[10px] md:w-[21px] md:h-[25px] h-[11px]"
+                className="w-[14px] md:w-[21px] md:h-[25px] h-[15px]"
                 src="/images/navTrash.png"
                 alt="trash"
                 width={30}
