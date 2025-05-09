@@ -16,7 +16,7 @@ export const Navbar = () => {
   ];
 
   return (
-    <header className="bg-white h-[40px] md:h-[64px] flex items-center w-full">
+    <header className="bg-white h-[50px] md:h-[64px] flex items-center w-full">
       <nav className="p-3 px-2 md:px-[1.5rem] w-full max-w-[1500px] mx-auto">
         {/* LOGO */}
         <div className="flex justify-between items-center">
@@ -27,7 +27,7 @@ export const Navbar = () => {
           </Link>
 
           {/* NAVLINKS */}
-          <ul className="flex  gap-[8px] md:gap-[1.8rem] items-center">
+          <ul className="flex  gap-[10px] md:gap-[1.8rem] items-center">
             {menuItems.map((item, index) => (
               <li
                 key={index}

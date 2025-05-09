@@ -18,7 +18,7 @@ export const HeroSection = () => {
       </video>
 
       {/*  overlay or hero content */}
-      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 max-w-[350px] md:max-w-[1000px] mx-auto py-4 md:py-8 ">
+      <div className="relative z-10 flex flex-col items-center justify-between  h-full text-white text-center text-[13px] px-3 max-w-[350px] md:max-w-[1000px] mx-auto py-4 md:py-8 pb-[1.7rem]">
         <div>
           <h1 className="font-[700] md:text-[36px] text-[20px] tracking-wide">
             Quit Smoking through Smart Financial Punishment
