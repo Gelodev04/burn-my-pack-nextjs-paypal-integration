@@ -53,6 +53,7 @@ export default function GetStartedPage() {
               <div className="relative w-[100px]  ml-2">
                 <input
                   type="number"
+                  min={0}
                   className=" pl-5 border border-[#808080] rounded-[8px]  py-1 w-full"
                 />
                 <div className="absolute left-2 top-1/2 -translate-y-1/2 text-[18px]pointer-events-none text-[#00B894]">
