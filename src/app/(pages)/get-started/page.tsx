@@ -11,7 +11,7 @@ export default function GetStartedPage() {
           </p>
         </div>
         {/* STEP 1 */}
-        <div className="bg-white rounded-[10px] px-3 md:px-4 py-3 md:py-5 mt-8 md:mt-10">
+        <div className="bg-white rounded-[10px] px-3 md:px-4 py-3 md:py-5 mt-8 md:mt-10 ">
           <div className="space-y-3">
             <h6 className=" font-bold text-[18px] md:text-[30px]">Step 1</h6>
             <p className="font-bold text-[14px] md:text-[20px]">
@@ -24,7 +24,7 @@ export default function GetStartedPage() {
               forget to consciously associate it with negative emotions.,
             </p>
           </div>
-          <div className="mt-5 text-center bg-[#EEEEEE] py-5 px-4 rounded ">
+          <div className="mt-5 text-center bg-[#EEEEEE] py-5 px-4 rounded md:pb-[1.5rem]">
             <span className="text-[20px] md:text-[24px] text-[black]">
               $29.99
             </span>
@@ -45,7 +45,7 @@ export default function GetStartedPage() {
               it says you broke your auth and smoked? Throw away your cash here. Made a mess of your setup? Perfect—this is where broken auth meets broken bank. Whether you smoked your stack or just love burning cash, you’re in the right place.
             </p>
           </div>
-          <div className="mt-5 text-center bg-[#EEEEEE] py-5 px-4 rounded ">
+          <div className="mt-5 text-center bg-[#EEEEEE] py-5 px-4 rounded md:pb-[1.5rem]">
              <div className="flex justify-center items-center">
               <span className="text-[20px] md:text-[24px] text-[#00B894]">
                 $10.00

@@ -23,7 +23,6 @@ export default function TrashPage() {
             </p>
           </div>
           {/* PAYMENT */}
-
           <div className="mt-1 text-center  py-5  rounded md:px-5">
             <div className="flex justify-center items-center">
               <span className="text-[20px] md:text-[24px] text-[#00B894]">
