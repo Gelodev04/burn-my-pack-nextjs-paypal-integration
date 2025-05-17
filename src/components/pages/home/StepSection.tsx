@@ -62,7 +62,7 @@ export const StepSection = () => {
             <Image
               className="md:w-[24px] w-[40px]"
               src="/images/danger.png"
-              alt="danger"
+              alt="danger icon"
               width={20}
               height={20}
             />

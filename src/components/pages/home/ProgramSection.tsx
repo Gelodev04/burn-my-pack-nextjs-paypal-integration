@@ -13,7 +13,7 @@ export const Program = () => {
           <Image
             className="max-w-[80px] h-[90px] md:max-w-[175px] md:h-[200px]"
             src="/images/trash.png"
-            alt="trash"
+            alt="trashcan"
             width={400}
             height={400}
           />
@@ -44,7 +44,7 @@ export const Program = () => {
           <Image
             className="size-5 md:size-5"
             src="/images/check.png"
-            alt="trash"
+            alt="check icon"
             width={20}
             height={20}
           />

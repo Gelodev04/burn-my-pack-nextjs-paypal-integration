@@ -44,7 +44,7 @@ export const HeroSection = () => {
               you.
             </p>
           </div>
-          <LearnmoreButton />
+          <LearnmoreButton text="Learn More" />
         </div>
       </div>
 

@@ -1,35 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
-
 @font-face {
-  font-family: 'Lora';
-  src: url('/fonts/Lora-Regular.ttf') format('truetype');
+  font-family: "Lora";
+  src: url("/fonts/Lora-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lora';
-  src: url('/fonts/Lora-Bold.ttf') format('truetype');
+  font-family: "Lora";
+  src: url("/fonts/Lora-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
-@theme{
-  --text-h2: 21px;
-  --text-h3: 17px
+@theme {
+  --font-inter: "Inter", sans-serif;
 }
 
-.text-color1{
-  color: #2D2D2D;
+.text-color1 {
+  color: #2d2d2d;
 }
 
 body {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   background-color: white;
 }
+
+button {
+  cursor: pointer;
+}
+
+.background {
+  position: relative;
+  background-image: url("/images/acabdb2b1a11786ed93388f114f8c66e7247e04c.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+  z-index: 1;
+}
+
+/* Ensure content inside stays above the overlay */
+.background > * {
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+}
+
+.slide-fade {
+  animation: slideFadeIn 0.3s ease-out forwards;
+}
+
+
+
+
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
